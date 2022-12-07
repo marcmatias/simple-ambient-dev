@@ -1,0 +1,16 @@
+{
+  "notify": false,
+  "ghostMode": false,
+  "logLevel": "silent",
+  "injectChanges": false,
+  "files": [
+    "./*.{html,css,js}",
+    "./templates/*.{html,css,js}",
+    "./templates/assets/css/*.css"
+  ],
+  "watchOptions": { "ignored": "node_modules" },
+  "server": {
+    "baseDir": "."
+  },
+  "open": false
+}

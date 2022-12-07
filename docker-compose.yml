@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    user: "1000:1000"
+    container_name: simple_ambient_dev
+    stdin_open: true
+    command:
+      - "/bin/sh"
+    ports:
+      - "3000:3000"
+    volumes:
+      - "node_modules:/app/node_modules"
+      - ".:/app"
+
+volumes:
+  node_modules:
