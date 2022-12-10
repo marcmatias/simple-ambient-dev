@@ -1,0 +1,28 @@
+/* --------------------------------
+
+Spacing
+
+-------------------------------- */
+
+:root {
+  /* spacing values */
+  --pcds-space-unit: .85em;
+  --pcds-space-xxxs: calc(0.25 * var(--pcds-space-unit));
+  --pcds-space-xxs:  calc(0.375 * var(--pcds-space-unit));
+  --pcds-space-xs:   calc(0.5 * var(--pcds-space-unit));
+  --pcds-space-sm:   calc(0.75 * var(--pcds-space-unit));
+  --pcds-space-md:   calc(1.25 * var(--pcds-space-unit));
+  --pcds-space-lg:   calc(2 * var(--pcds-space-unit));
+  --pcds-space-xl:   calc(3.25 * var(--pcds-space-unit));
+  --pcds-space-xxl:  calc(5.25 * var(--pcds-space-unit));
+  --pcds-space-xxxl: calc(8.5 * var(--pcds-space-unit));
+
+  /* components padding */
+  --pcds-button-x-padding: var(--pcds-space-lg);
+  --pcds-button-y-padding: var(--pcds-space-md);
+
+  --pcds-table-x-padding: var(--pcds-space-md);
+  --pcds-table-y-padding: var(--pcds-space-md);
+  --pcds-table-header-padding: var(--pcds-space-md);
+  --pcds-btn-square: calc(3 * var(--pcds-space-md));
+}

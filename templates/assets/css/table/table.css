@@ -1,0 +1,33 @@
+.ta {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ta__th {
+  background-color: var(--pcds-table-header-bg);
+  font-weight: 500;
+}
+
+.ta__th,
+.ta__td {
+  border-bottom: 1px solid var(--pcds-color-border);
+  text-align: left;
+  padding-top: var(--pcds-table-y-padding);
+  padding-bottom: var(--pcds-table-y-padding);
+  padding-left: var(--pcds-table-x-padding);
+  padding-right: var(--pcds-table-x-padding);
+}
+
+/* TODO: show only if sortable */
+.ta__th:hover {
+  background-color: var(--pcds-table-th-hover);
+}
+
+.ta__tr {
+  background-color: var(--pcds-table-bg);
+  font-weight: 300;
+}
+
+.ta__tr:hover {
+  background-color: var(--pcds-table-tr-hover);
+}

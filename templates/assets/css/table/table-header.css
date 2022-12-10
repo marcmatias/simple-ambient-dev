@@ -1,0 +1,21 @@
+.ta-table-header {
+  padding-left: var(--pcds-table-header-padding);
+  padding-right: var(--pcds-table-header-padding);
+  background-color: var(--pcds-table-bg);
+}
+
+.ta-table-header__title {
+  margin: 0px;
+  padding-top: var(--pcds-table-header-padding);
+  padding-bottom: var(--pcds-table-header-padding);
+}
+
+.ta-table-header--lg {
+  padding-top: var(--pcds-table-header-padding);
+  padding-bottom: var(--pcds-table-header-padding);
+}
+
+.ta-table-header__description {
+  margin: 0px;
+  padding-bottom: var(--pcds-space-md);
+}
