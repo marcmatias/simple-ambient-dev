@@ -1,12 +1,10 @@
 FROM node:16-alpine
 
-WORKDIR /app
+WORKDIR /app/
 
-COPY package.json yarn.lock /app
+COPY package.json yarn.lock /app/
 
 RUN yarn
-
-COPY . /app
 
 RUN chown -R node node_modules/
 
