@@ -1,0 +1,13 @@
+/* --------------------------------
+
+Icons
+
+-------------------------------- */
+
+:root {
+  --pcds-icon-xs: 16px;
+  --pcds-icon-sm: 24px;
+  --pcds-icon-md: 32px;
+  --pcds-icon-lg: 48px;
+  --pcds-icon-xl: 64px;
+}

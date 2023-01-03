@@ -1,0 +1,72 @@
+/* --------------------------------
+
+Typography
+
+-------------------------------- */
+
+:root {
+  --pcds-font-primary: 'Fira Sans', sans-serif;
+  --pcds-font-secondary: serif;
+
+  /* set base values */
+  --pcds-text-base-size: 1em;
+  --pcds-text-scale-ratio: 1.2;
+
+  /* type scale */
+  --pcds-text-xs: calc(1em / (var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio)));
+  --pcds-text-sm: calc(1em / var(--pcds-text-scale-ratio));
+  --pcds-text-md: calc(1em * var(--pcds-text-scale-ratio));
+  --pcds-text-lg: calc(1em * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio));
+  --pcds-text-xl: calc(1em * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio));
+  --pcds-text-xxl: calc(1em * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio));
+  --pcds-text-xxxl: calc(1em * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio) * var(--pcds-text-scale-ratio));
+
+  /* line-height */
+  --pcds-heading-line-height: 1.2;
+  --pcds-body-line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --pcds-text-base-size: .8em;
+    --pcds-text-scale-ratio: 1.1;
+  }
+}
+
+.ta-container {
+  font-size: var(--pcds-text-base-size);
+  font-family: var(--pcds-font-primary);
+  color: var(--pcds-color-text);
+}
+
+.ta-container button {
+  font-size: var(--pcds-text-sm);
+}
+
+.ta-container h1,
+.ta-container h2,
+.ta-container h3,
+.ta-container h4,
+.ta-container form legend {
+  color: var(--pcds-color-text-heading);
+  margin-bottom: var(--pcds-space-xxs);
+  line-height: var(--pcds-heading-line-height);
+}
+
+.ta-container a {
+  color: var(--pcds-color-link);
+
+}
+
+.ta-container a:visited {
+  color: var(--pcds-color-link-visited);
+}
+
+/* utility classes */
+
+.ta-container .truncate {
+  /* truncate text if it exceeds parent */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

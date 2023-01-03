@@ -1,0 +1,152 @@
+/* -------------------------------- 
+
+Buttons
+
+-------------------------------- */
+
+:root {
+  --pcds-btn-font-size: 1em;
+  --pcds-btn-sm: calc(var(--pcds-btn-font-size) - 0.2em);
+  --pcds-btn-md: calc(var(--pcds-btn-font-size) - 0.1em);
+  --pcds-btn-lg: var(--pcds-btn-font-size);
+
+  --pcds-btn-radius: var(--pcds-radius);
+  --pcds-btn-radius-rounded: var(--pcds-space-lg);
+}
+
+.btn {
+  border: none;
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+
+  padding: var(--pcds-space-md) var(--pcds-space-md);
+  border-radius: var(--pcds-btn-radius);
+  font-size: var(--pcds-btn-lg);
+  color: var(--pcds-color-link);
+
+  transition: .2s;
+}
+
+.btn:active {
+  transition: none;
+}
+
+.btn .icon {
+  /* icon inherits color of button label */
+  color: inherit;
+  flex-shrink: 0;
+}
+
+/* themes */
+.btn--primary {
+  /* main button */
+  background-color: var(--pcds-btn-primary-bg);
+  color: var(--pcds-btn-primary-label);
+}
+
+.btn--primary:visited {
+  color: var(--pcds-btn-primary-label);
+}
+
+.btn--primary:hover {
+  background-color: var(--pcds-btn-primary-hover);
+}
+
+.btn--primary:active {
+  background-color: var(--pcds-btn-primary-active);
+}
+
+.btn--secondary {
+  /* subtle version, used for secondary actions or in combo with primary/accent button */
+  background-color: var(--pcds-btn-secondary-bg);
+  color: var(--pcds-btn-secondary-label);
+}
+
+.btn--secondary:hover {
+  background-color: var(--pcds-btn-secondary-hover);
+}
+
+.btn--secondary:active {
+  background-color: var(--pcds-btn-secondary-active);
+}
+
+.btn-secondary:active {
+  background-color: var(--pcds-btn-secondary-active);
+}
+
+.btn--accent {
+  /* used to draw special attention to the button (e.g. destructive actions) */
+  background-color: var(--pcds-btn-accent-bg);
+  color: var(--pcds-btn-accent-label);
+}
+
+.btn--accent:visited {
+  color: var(--pcds-btn-accent-label);
+}
+
+.btn--accent:hover {
+  background-color: var(--pcds-btn-accent-hover);
+}
+
+.btn--accent:active {
+  background-color: var(--pcds-btn-accent-active);
+}
+
+/* feedback */
+.btn[disabled] {
+  cursor: not-allowed;
+  background-color: var(--pcds-btn-disabled-bg);
+  color: var(--pcds-btn-disabled-label);
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.btn[disabled]:visited {
+  color: var(--pcds-btn-disabled-label);
+}
+
+/* button size */
+.btn--sm {
+  font-size: var(--pcds-btn-sm);
+}
+
+.btn--md {
+  font-size: var(--pcds-btn-md);
+}
+
+.btn--lg {
+  font-size: var(--pcds-btn-lg);
+}
+
+.btn--full-width {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn--rounded {
+  border-radius: var(--pcds-btn-radius-rounded);
+  line-height: 0;
+}
+
+/* buttons group */
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--pcds-space-xs));
+}
+
+.btns > * {
+  margin-right: var(--pcds-space-xs);
+  margin-bottom: var(--pcds-space-xs);
+
+}
+
+.btns > *:last-of-type {
+  margin-right: 0;
+}
+

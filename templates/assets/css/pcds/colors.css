@@ -1,0 +1,75 @@
+:root {
+  /* main colors */
+  --pcds-color-primary: hsl(219, 99%, 53%);
+  --pcds-color-primary-light: hsl(219, 99%, 45%);
+  --pcds-color-primary-dark:hsl(219, 99%, 31%);
+  --pcds-color-primary-bg: hsl(219, 99%, 90%);
+
+  --pcds-color-secondary: hsl(0, 0%, 22%);
+  --pcds-color-secondary-light: hsl(0, 0%, 28%);
+  --pcds-color-secondary-dark: hsl(0, 0%, 44%);
+  --pcds-color-secondary-bg: hsl(0, 0%, 80%);
+
+  --pcds-color-accent: hsl(357, 76%, 49%);
+  --pcds-color-accent-light: hsl(357, 76%, 41%);
+  --pcds-color-accent-dark: hsl(357, 76%, 26%);
+  --pcds-color-accent-bg: hsl(355, 76%, 90%);
+
+  /* shades - generated using chroma.js - 12 steps */
+  --pcds-black: #1d1d21;
+  --pcds-gray-10: #202020;
+  --pcds-gray-6: #4e4e4e;
+  --pcds-gray-4: #9d9d9d;
+  --pcds-gray-3: #b9b9b9;
+  --pcds-gray-2: #d6d6d6;
+  --pcds-gray-1: #f4f4f4;
+  --pcds-white: white;
+
+  /* feedback */
+  --pcds-color-success: #88c459;
+  --pcds-color-error: #f5414f;
+  --pcds-color-warning: #ffd137;
+
+  /* typography */
+  --pcds-color-text: var(--pcds-gray-10);
+  --pcds-color-text-heading: var(--pcds-black);
+  --pcds-color-text-subtle: var(--pcds-gray-6);
+  --pcds-color-link: var(--pcds-color-primary);
+  --pcds-color-link-visited: var(--pcds-color-primary-dark);
+  --pcds-color-mark: var(--pcds-color-accent-bg);
+  --pcds-color-blockquote-border: var(--pcds-gray-2);
+
+  /* border */
+  --pcds-color-border: var(--pcds-gray-2);
+
+  /* body */
+  --pcds-color-body: var(--pcds-white);
+
+  /* forms */
+  --pcds-form-element-border: var(--pcds-color-border);
+  --pcds-form-element-border-focus: var(--pcds-color-primary);
+  --pcds-form-element-border-error: var(--pcds-color-error);
+  --pcds-form-element-bg: var(--pcds-white);
+  --pcds-form-text-placeholder: var(--pcds-gray-4);
+
+  /* buttons */
+  --pcds-btn-primary-bg: var(--pcds-color-primary);
+  --pcds-btn-primary-hover: var(--pcds-color-primary-light);
+  --pcds-btn-primary-active: var(--pcds-color-primary-dark);
+  --pcds-btn-primary-label: var(--pcds-white);
+
+  --pcds-btn-secondary-bg: var(--pcds-color-secondary);
+  --pcds-btn-secondary-hover: var(--pcds-color-secondary-light);
+  --pcds-btn-secondary-active: var(--pcds-color-secondary-dark);
+  --pcds-btn-secondary-label: var(--pcds-white);
+
+  /* icons */
+  --pcds-icon-primary: var(--pcds-gray-4);
+  --pcds-icon-secondary: inherit;
+
+  /* tables */
+  --pcds-table-bg: var(--pcds-gray-1);
+  --pcds-table-header-bg: #e0e0e0;
+  --pcds-table-th-hover: var(--pcds-gray-2);
+  --pcds-table-tr-hover: #e5e5e5;
+}
